@@ -7,7 +7,7 @@
 /**
  * แปลงค่า blocks
  */
-//% weight=100 color=#0fbc11 icon=""
+//% weight=100 color=#0fbc11 icon="⇔"
 namespace แปลงค่า {
     /**แปลงค่า Celcius(ตัวเลข) ไป Farenheit (ตัวอักษร)
      * @param value degree in celcius, eg: 0
