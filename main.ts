@@ -5,7 +5,7 @@
  */
 
 /**
- * Custom blocks
+ * แปลงค่า blocks
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace แปลงค่า {
