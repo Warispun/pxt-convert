@@ -9,10 +9,10 @@
  */
 //% weight=100 color=#0fbc11 icon="⇔"
 namespace convert {
-    /**Convert Celcius(number) ไป Farenheit (string)
+    /**Convert Celcius(number) to Farenheit (string)
      * @param value degree in celcius, eg: 0
      */
-    //% blockId=CelciusToFarenheit block="convert %value|℃ to ℉(ตัวอักษร)"
+    //% blockId=CelciusToFarenheit block="convert %value|℃ to ℉(string)"
     export function celciusToFarenheit(value: number): string {
 
         let farenheit = (value * 9 / 5) + 32
@@ -21,7 +21,7 @@ namespace convert {
         return farenheit.toString() + "." + remain.toString()
     }
 
-    /**Convert milimeter(> 0) to inch(string)
+    /**Convert milimeter(number > 0) to inch(string)
      * @param value in mm, eg: 0
      * value.min=0
      */
@@ -35,7 +35,7 @@ namespace convert {
         return inch.toString() + "." + remain.toString()
     }
 
-    /**Convert Kilometer(> 0) to mile(string)
+    /**Convert Kilometer(number > 0) to mile(string)
      * @param value in Km, eg: 0
      * value.min=0
      */
