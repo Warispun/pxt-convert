@@ -5,14 +5,14 @@
  */
 
 /**
- * แปลงค่า blocks
+ * Convert blocks
  */
 //% weight=100 color=#0fbc11 icon="⇔"
-namespace แปลงค่า {
-    /**แปลงค่า Celcius(ตัวเลข) ไป Farenheit (ตัวอักษร)
+namespace convert {
+    /**Convert Celcius(number) ไป Farenheit (string)
      * @param value degree in celcius, eg: 0
      */
-    //% blockId=CelciusToFarenheit block="แปลงค่า %value|℃ เป็น ℉(ตัวอักษร)"
+    //% blockId=CelciusToFarenheit block="convert %value|℃ to ℉(ตัวอักษร)"
     export function celciusToFarenheit(value: number): string {
 
         let farenheit = (value * 9 / 5) + 32
@@ -21,11 +21,11 @@ namespace แปลงค่า {
         return farenheit.toString() + "." + remain.toString()
     }
 
-    /**แปลงค่า มิลลิเมตร(ตัวเลขไม่น้อยกว่า 0) ไป นิ้ว(ตัวอักษร)
+    /**Convert milimeter(> 0) to inch(string)
      * @param value in mm, eg: 0
      * value.min=0
      */
-    //% blockId=MMToInch block="แปลงค่า %value|มม. เป็น นิ้ว(ตัวอักษร)"
+    //% blockId=MMToInch block="convert %value|mm to inch(string)"
     export function mmToInch(value: number): string {
         if (value < 0)
             value = 0
@@ -35,11 +35,11 @@ namespace แปลงค่า {
         return inch.toString() + "." + remain.toString()
     }
 
-    /**แปลงค่า กิโลเมตร(ตัวเลขไม่น้อยกว่า 0) ไป ไมล์(ตัวอักษร)
+    /**Convert Kilometer(> 0) to mile(string)
      * @param value in Km, eg: 0
      * value.min=0
      */
-    //% blockId=KmToMile block="แปลงค่า %value|กม. เป็น ไมล์"
+    //% blockId=KmToMile block="convert %value|Km. to mile"
     export function KmToMile(value: number): string {
         if (value < 0)
             value = 0
