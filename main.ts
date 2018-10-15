@@ -39,7 +39,7 @@ namespace convert {
      * @param value in Km, eg: 0
      * value.min=0
      */
-    //% blockId=KmToMile block="convert %value|Km. to mile"
+    //% blockId=KmToMile block="convert %value|Km. to mile(string)"
     export function KmToMile(value: number): string {
         if (value < 0)
             value = 0
